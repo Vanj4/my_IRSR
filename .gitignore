@@ -1,0 +1,68 @@
+# ===== Python缓存与构建产物 =====
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== 本地缓存和第三方依赖副本 =====
+.cache/
+_deps/
+
+# ===== 数据集：不上传原始IR/RGB图像 =====
+# 按目录忽略，不全局忽略png/jpg，便于保留论文示意图和示例图。
+/dataset/
+/datasets/
+/data/
+
+# ===== 训练权重及检查点 =====
+checkpoints/
+experiments/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# ===== 实验输出、日志及可视化 =====
+results/
+runs/
+wandb/
+lightning_logs/
+*.log
+*.jsonl
+events.out.tfevents.*
+run.lock
+
+# ===== 本地备份与临时文件 =====
+_backups/
+*.bak
+*.tmp
+*.pt.tmp
+.ipynb_checkpoints/
+
+# ===== 编辑器与操作系统文件 =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== 密钥与本地配置 =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
